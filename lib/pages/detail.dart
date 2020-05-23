@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/main.dart';
 class DetailPage extends StatelessWidget {
 
   final arguments;
@@ -9,8 +10,12 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: ()=>Navigator.pop(context),
-        child: Text('返回'),
+        onPressed: (){
+          //Navigator.pop(context);
+          //Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: ((context)=>MyApp())), (route) => false);
+          Navigator.pushNamed(context, 'tabBarControllerPage');
+        },
+        child: Text('a'),
         ),
       appBar: AppBar(
         title: Text('详情标题'),
