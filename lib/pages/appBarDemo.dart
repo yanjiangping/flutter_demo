@@ -7,7 +7,12 @@ class AppBarDemoPage extends StatelessWidget {
         length: 2,
         child: Scaffold(
           floatingActionButton: FloatingActionButton(
-            child: Icon(Icons.send),
+            backgroundColor: Colors.yellow,
+            child: Icon(
+              Icons.add,
+              color: Colors.black,
+              size: 36,
+              ),
             onPressed: (){
               print('aa');
             }

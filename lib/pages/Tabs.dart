@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/pages/appBarDemo.dart';
+import 'package:flutter_demo/pages/radio_page.dart';
+import 'CheckBox.dart';
 import 'Home.dart';
 import 'Setting.dart';
+import 'TextField.dart';
+import 'date_pick_pub.dart';
+import 'date_picker.dart';
 
 class TabsPage extends StatefulWidget {
   @override
@@ -9,13 +15,37 @@ class TabsPage extends StatefulWidget {
 
 class _TabsPageState extends State<TabsPage> {
   int pageIndex;
-  List pageList=[HomePage(),SettingPage()];
+  List pageList=[DatePickPub(),HomePage(),RadioPage()];
 
   _TabsPageState({this.pageIndex:0});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Container(
+        height:60,
+        width: 60,
+        // decoration: BoxDecoration(
+        //   borderRadius: BorderRadius.circular(40),
+        //   color: Colors.white,
+        // ),
+        margin: EdgeInsets.only(top:5),
+        //padding: EdgeInsets.all(10),
+        child: FloatingActionButton(
+          backgroundColor: pageIndex==1?Colors.red:Colors.yellow,
+          child: Icon(
+            Icons.add,
+            color: Colors.black,
+            size: 36,
+            ),
+          onPressed: (){
+            setState(() {
+              pageIndex=1;
+            });
+          }
+          ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       appBar: AppBar(
         title: Text('我是标题'),
       ),
@@ -68,6 +98,8 @@ class _TabsPageState extends State<TabsPage> {
       ),
       endDrawer: Drawer(child: Text('bbb')),
       bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.red,
+        type: BottomNavigationBarType.fixed,//配置底部可以有多个按钮
           onTap: (index){  
             setState(() {
               pageIndex = index;
@@ -76,8 +108,8 @@ class _TabsPageState extends State<TabsPage> {
           currentIndex: pageIndex,
           items: [
             BottomNavigationBarItem(title: Text('首页'), icon: Icon(Icons.home)),
-            BottomNavigationBarItem(
-                title: Text('设置'), icon: Icon(Icons.settings))
+            BottomNavigationBarItem(title: Text('分类'), icon: Icon(Icons.score)),
+            BottomNavigationBarItem(title: Text('设置'), icon: Icon(Icons.settings))
           ]),
     );
   }
