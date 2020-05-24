@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/pages/appBarDemo.dart';
 import 'package:flutter_demo/pages/radio_page.dart';
+import 'package:flutter_demo/pages/swiper_page.dart';
 import 'CheckBox.dart';
 import 'Home.dart';
 import 'Setting.dart';
 import 'TextField.dart';
 import 'date_pick_pub.dart';
 import 'date_picker.dart';
+import 'dialog_page.dart';
 
 class TabsPage extends StatefulWidget {
   @override
@@ -15,7 +17,7 @@ class TabsPage extends StatefulWidget {
 
 class _TabsPageState extends State<TabsPage> {
   int pageIndex;
-  List pageList=[DatePickPub(),HomePage(),RadioPage()];
+  List pageList=[DialogPage(),HomePage(),RadioPage()];
 
   _TabsPageState({this.pageIndex:0});
 
@@ -31,7 +33,7 @@ class _TabsPageState extends State<TabsPage> {
         // ),
         margin: EdgeInsets.only(top:5),
         //padding: EdgeInsets.all(10),
-        child: FloatingActionButton(
+        /*child: FloatingActionButton(
           backgroundColor: pageIndex==1?Colors.red:Colors.yellow,
           child: Icon(
             Icons.add,
@@ -43,7 +45,7 @@ class _TabsPageState extends State<TabsPage> {
               pageIndex=1;
             });
           }
-          ),
+          ),*/
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       appBar: AppBar(
