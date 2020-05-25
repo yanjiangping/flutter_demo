@@ -9,6 +9,7 @@ import 'TextField.dart';
 import 'date_pick_pub.dart';
 import 'date_picker.dart';
 import 'dialog_page.dart';
+import 'http_page_bac.dart';
 
 class TabsPage extends StatefulWidget {
   @override
@@ -17,7 +18,7 @@ class TabsPage extends StatefulWidget {
 
 class _TabsPageState extends State<TabsPage> {
   int pageIndex;
-  List pageList=[DialogPage(),HomePage(),RadioPage()];
+  List pageList=[HttpPage(),HomePage(),RadioPage()];
 
   _TabsPageState({this.pageIndex:0});
 
