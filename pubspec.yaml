@@ -30,6 +30,8 @@ dependencies:
   flutter_swiper: ^1.1.6
   fluttertoast: ^4.0.1
   http: ^0.12.1
+  # 表单 https://github.com/codegrue/card_settings
+  card_settings: ^1.9.4
 
 dev_dependencies:
   flutter_test:

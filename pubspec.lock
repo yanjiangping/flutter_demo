@@ -29,6 +29,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.0.0"
+  card_settings:
+    dependency: "direct main"
+    description:
+      name: card_settings
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.9.4"
   charcode:
     dependency: transitive
     description:
@@ -71,18 +78,39 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.8"
-  dio:
-    dependency: "direct main"
+  file_chooser:
+    dependency: transitive
     description:
-      name: dio
+      name: file_chooser
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "3.0.9"
+    version: "0.1.2"
+  file_picker:
+    dependency: transitive
+    description:
+      name: file_picker
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.9.0+1"
+  file_picker_cross:
+    dependency: transitive
+    description:
+      name: file_picker_cross
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.0"
   flutter:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_colorpicker:
+    dependency: transitive
+    description:
+      name: flutter_colorpicker
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.3.4"
   flutter_cupertino_date_picker:
     dependency: "direct main"
     description:
@@ -90,11 +118,32 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.26"
+  flutter_cupertino_settings:
+    dependency: transitive
+    description:
+      name: flutter_cupertino_settings
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.3.1"
   flutter_localizations:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_masked_text:
+    dependency: transitive
+    description:
+      name: flutter_masked_text
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.8.0"
+  flutter_material_pickers:
+    dependency: transitive
+    description:
+      name: flutter_material_pickers
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.5.4"
   flutter_page_indicator:
     dependency: transitive
     description:
@@ -102,6 +151,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.0.3"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.8"
   flutter_swiper:
     dependency: "direct main"
     description:
@@ -273,4 +329,4 @@ packages:
     version: "3.6.1"
 sdks:
   dart: ">=2.6.0 <3.0.0"
-  flutter: ">=1.12.8 <2.0.0"
+  flutter: ">=1.12.13 <2.0.0"

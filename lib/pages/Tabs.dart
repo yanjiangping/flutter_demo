@@ -3,9 +3,14 @@ import 'package:flutter_demo/pages/appBarDemo.dart';
 import 'package:flutter_demo/pages/radio_page.dart';
 import 'package:flutter_demo/pages/swiper_page.dart';
 import 'CheckBox.dart';
+import 'ConstrainedBoxPage.dart';
+import 'FutureStreamPage.dart';
 import 'Home.dart';
+import 'ScrollViewPage.dart';
 import 'Setting.dart';
 import 'TextField.dart';
+import 'ThemeTestRoute.dart';
+import 'card_settings_page.dart';
 import 'date_pick_pub.dart';
 import 'date_picker.dart';
 import 'dialog_page.dart';
@@ -18,7 +23,7 @@ class TabsPage extends StatefulWidget {
 
 class _TabsPageState extends State<TabsPage> {
   int pageIndex;
-  List pageList=[HttpPage(),HomePage(),RadioPage()];
+  List pageList=[CardSettingsPage(),HomePage(),RadioPage()];
 
   _TabsPageState({this.pageIndex:0});
 
