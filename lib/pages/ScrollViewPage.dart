@@ -39,7 +39,7 @@ class _ScrollViewPageState extends State<ScrollViewPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scrollbar( //进度条
+   /* return Scrollbar( //进度条
       // 监听滚动通知
       child: NotificationListener<ScrollNotification>(
         onNotification: (ScrollNotification notification) {
@@ -70,7 +70,7 @@ class _ScrollViewPageState extends State<ScrollViewPage> {
           ],
         ),
       ),
-    );
+    );*/
 
 
    /* return Scaffold(
@@ -107,7 +107,7 @@ class _ScrollViewPageState extends State<ScrollViewPage> {
     ]);*/
 
 
-    /*return CustomScrollView(
+    return CustomScrollView(
       slivers: <Widget>[
         //AppBar，包含一个导航栏
         SliverAppBar(
@@ -122,7 +122,7 @@ class _ScrollViewPageState extends State<ScrollViewPage> {
 
         SliverPadding(
           padding: const EdgeInsets.all(8.0),
-          sliver: new SliverGrid( //Grid
+          sliver: new SliverGrid(  //Grid
             gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, //Grid按两列显示
               mainAxisSpacing: 10.0,
@@ -158,7 +158,7 @@ class _ScrollViewPageState extends State<ScrollViewPage> {
           ),
         ),
       ],
-    );*/
+    );
 
 
   }

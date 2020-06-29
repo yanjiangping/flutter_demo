@@ -15,6 +15,7 @@ import 'date_pick_pub.dart';
 import 'date_picker.dart';
 import 'dialog_page.dart';
 import 'http_page_bac.dart';
+import 'menu_page.dart';
 
 class TabsPage extends StatefulWidget {
   @override
@@ -23,7 +24,7 @@ class TabsPage extends StatefulWidget {
 
 class _TabsPageState extends State<TabsPage> {
   int pageIndex;
-  List pageList=[CardSettingsPage(),HomePage(),RadioPage()];
+  List pageList=[MenuPage(),HomePage(),RadioPage()];
 
   _TabsPageState({this.pageIndex:0});
 
