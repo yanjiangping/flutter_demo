@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/main.dart';
+import 'package:flutter_demo/tools/EventBus.dart';
 class DetailPage extends StatelessWidget {
 
   final arguments;
@@ -18,6 +18,11 @@ class DetailPage extends StatelessWidget {
         child: Text('a'),
         ),
       appBar: AppBar(
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.add), onPressed: (){
+            bus.emit("add", 'aaa');
+          })
+        ],
         title: Text('详情标题'),
       ),
       body: ListView(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'drag_page.dart';
+import 'package:flutter_demo/tools/EventBus.dart';
 
 class MenuPage extends StatefulWidget {
   @override
@@ -11,6 +10,16 @@ class _MenuPageState extends State<MenuPage> {
 
   List pageList=['/dragPage','/scrollViewPage','/gestureRecognizerTest','/bothDirectionPage'];
   List pageName=['拖动','滑动','点击变色','双向拖动'];
+
+  @override
+  initState(){
+    super.initState();
+    //监听事件
+    bus.on("add", (arg) {
+      // do something
+      print('arg:$arg');
+    });
+  }
 
   List<Widget> getMenu(){
     List<Widget> buttonList=[];
