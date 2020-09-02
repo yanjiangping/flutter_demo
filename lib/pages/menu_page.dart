@@ -8,8 +8,8 @@ class MenuPage extends StatefulWidget {
 
 class _MenuPageState extends State<MenuPage> {
 
-  List pageList=['/dragPage','/scrollViewPage','/gestureRecognizerTest','/bothDirectionPage'];
-  List pageName=['拖动','滑动','点击变色','双向拖动'];
+  List pageList=['/dragPage','/scrollViewPage','/gestureRecognizerTest','/bothDirectionPage','/notificationPage'];
+  List pageName=['拖动','滑动','点击变色','双向拖动','通知'];
 
   @override
   initState(){

@@ -6,6 +6,7 @@ import 'package:flutter_demo/pages/TabController.dart';
 import 'package:flutter_demo/pages/appBarDemo.dart';
 import 'package:flutter_demo/pages/detail.dart';
 import 'package:flutter_demo/pages/drag_page.dart';
+import 'package:flutter_demo/pages/notification_page.dart';
 
 final routes= {
         'detail':(context,{arguments})=>DetailPage(arguments:arguments),
@@ -15,6 +16,7 @@ final routes= {
         '/scrollViewPage':(context,{arguments})=>ScrollViewPage(),
         '/gestureRecognizerTest':(context,{arguments})=>GestureRecognizerTestRoute(),
         '/bothDirectionPage':(context,{arguments})=>BothDirectionPage(),
+        '/notificationPage':(context,{arguments})=>NotificationPage(),
       };
 
 var onGenerateRoute=(RouteSettings settings){
